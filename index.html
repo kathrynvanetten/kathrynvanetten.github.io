@@ -10,32 +10,21 @@
   >
   <meta name="google-site-verification" content="googlef46f0b3759a7d9f1.html">
   <title>Kathryn Van Etten</title>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+<script> 
+$(function(){
+  $("#header").load("header.html"); 
+  $("#footer").load("footer.html"); 
+});
+</script> 
 </head>
 <body>
   <div class="container"> 
-    <nav>
-      <ul>
-      <li><strong>Home</strong></li>
-      </ul>
-      <ul>
-        <li><a href="research.html">Research</a></li>
-      </ul>
-      <ul>
-        <li><a href="teaching.html">Teaching</a></li>
-      </ul>
-      <ul>
-        <li><a href="misc.html">Miscellaneous</a></li>
-      </ul>
-    </nav>
-    <header>
-      <h1>
-        Kathryn Van Etten
-      </h1>
-      <h3>
-        Graduate Student <br>
-        Department of Mathematics, University of Nebraska - Lincoln
-      </h3>
-    </header>
+    <div id="header"></div>
     <main class="container">
       <p>
         I am a seventh-year mathematics graduate student at the University of Nebraska-Lincoln. 
@@ -51,7 +40,7 @@
         Office: Avery 344
       </p>
     </main>
-    {% include footer.html %}
+    <div id="footer"></div>
   </div>
 </body>
 </html>
